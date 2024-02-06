@@ -10,6 +10,7 @@
     - Lance des appels API pour récupérer les données des pays
 */
 
+//update pour Netlify
 
 import Country from './country.js';
 import Game from './game.js';
