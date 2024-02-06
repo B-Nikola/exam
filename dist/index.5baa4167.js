@@ -589,7 +589,8 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
     - Utilise la classe `Game` de `Game.js`.
     - Manipule directement le DOM pour afficher les scores et les meilleurs scores.
     - Lance des appels API pour récupérer les données des pays
-*/ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+*/ //update pour Netlify
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _countryJs = require("./country.js");
 var _countryJsDefault = parcelHelpers.interopDefault(_countryJs);
 var _gameJs = require("./game.js");
