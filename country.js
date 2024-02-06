@@ -1,19 +1,3 @@
-import { toLower } from "lodash";
-
-/*
-- **Rôle** : Ce fichier définit la classe `Country`, représentant le modèle de données et la présentation d'un pays individuel.
-- **Fonctionnalités** :
-    - Contient des données spécifiques au pays, telles que le drapeau et les réponses valides (dérivées des noms de pays dans différentes langues).
-    - Fournit une méthode pour vérifier si une réponse donnée est correcte.
-    - Gère l'affichage du drapeau du pays dans l'interface utilisateur.
-
-    ### Propriétés
-
-1. Une propriété contenant les données d’**un** pays. Ces données doivent correspondre à un objet du tableau retourné par l’API. Cet objet sera passé à chaque instance de Country par le `constructor`.
-2. Une propriété contenant toutes les réponses possibles pour un pays (ce tableau sera construit dans une méthode décrite plus loin). 
-3. Une propriété générée par un retournant uniquement le drapeau du pays.
-
-*/
 class Country {
 
     constructor(data) {
@@ -30,9 +14,6 @@ class Country {
         }
         return answers;
     }
-   
-    
-    
 
     getFlag() {
         return this.flag;
@@ -46,7 +27,6 @@ class Country {
         document.getElementById('flag').appendChild(flag);
     }
 
-    //test if an answer is true
     isCorrect(answer) {
         return this.answers.has(toLower(answer));
     }
